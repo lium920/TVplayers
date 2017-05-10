@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.administrator.tvplayers.MainActivity">
+    <media.IjkVideoView
+        android:id="@+id/player"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"></media.IjkVideoView>
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="@dimen/x160"
+        android:layout_height="@dimen/x60"
+        android:layout_alignParentStart="true"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:background="@drawable/video_bg_list"
+        android:id="@+id/progremlist"
+        android:layout_width="@dimen/x200"
+        android:layout_height="@dimen/x600"
+        android:layout_below="@+id/exit"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp">
+    </android.support.v7.widget.RecyclerView>
+
+
+
+</RelativeLayout>
